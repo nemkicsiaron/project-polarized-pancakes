@@ -1,15 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
 export default function Homer() {
     return (
-        <div className='styles.container'>
-            <Head>
-                <title>Pollarized</title>
-                <meta name="description" content="A placeholder...  for a saucy app" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+        <div className='container'>
             <main className={styles.main}>
             <h1 className={styles.title}>
                 Welcome to <a href="https://github.com/nemkicsiaron/project-polarized-pancakes">POLLARIZED</a>
@@ -25,7 +18,7 @@ export default function Homer() {
 
             <div className={styles.grid}>
                 {/* TODO: create  About us shit*/}
-                <a href="/about us" className={styles.card}>
+                <a href="/about" className={styles.card}>
                     <h2>Chech out what this all about &rarr;</h2>
                     <p>Read everything there is to know about this project.</p>
                 </a>
@@ -48,38 +41,6 @@ export default function Homer() {
             </div>
 
             </main>
-            <footer className={styles.footer}>
-                <a
-                href="https://github.com/nemkicsiaron/project-polarized-pancakes"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Project Pollarized{' '}
-                <span className={styles.logo}>
-                    <Image src="/pollarized.png" alt="Pollarized Logo" width={50} height={50} />
-                </span>
-                </a>
-                <a
-                href="https://github.com/nemkicsiaron"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Made by{' '}
-                <span className={styles.logo}>
-                    <Image src="/Kamarad Kommie Doggo.png" alt="My Logo" width={50} height={50} />
-                </span>
-                </a>
-                <a
-                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Powered by{' '}
-                <span className={styles.vlogo}>
-                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-                </span>
-                </a>
-             </footer>
         </div>
     );
 }
