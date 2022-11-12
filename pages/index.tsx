@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 import Link from "next/link";
 import styles from "../styles/Home.module.scss"
-=======
-import styles from '../styles/Home.module.scss'
->>>>>>> 40ad036a4688e9a963ce2d0af7ae17d4c0497d2b
+
 
 export default function Homer() {
     return (
@@ -22,19 +19,12 @@ export default function Homer() {
             </p>
 
             <div className={styles.grid}>
-<<<<<<< HEAD
                 {/* hrefDO: create  About us shit*/}
                 <Link href="/about" className={styles.card}>
                     <h2>Check out what this all about &rarr;</h2>
                     <p>Read everything there is href know about this project.</p>
                 </Link>
-=======
-                {/* TODO: create  About us shit*/}
-                <a href="/about" className={styles.card}>
-                    <h2>Chech out what this all about &rarr;</h2>
-                    <p>Read everything there is to know about this project.</p>
-                </a>
->>>>>>> 40ad036a4688e9a963ce2d0af7ae17d4c0497d2b
+
 
                 <Link href="https://www.paypal.com/donate/?hosted_buthrefn_id=FCQ4KFFC2XLV8" className={styles.card}>
                     <h2>Maybe buy me a coffee &rarr;</h2>
