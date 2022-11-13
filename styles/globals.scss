@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,523&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Nexa, Raleway, Roboto, Oxygen,
+  font-family: Raleway, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -23,34 +25,52 @@ a {
 }
 
 footer {
+  font-size: 16px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   flex: 1;
   border-top: 3px solid #eaeaea;
-  padding: 1.6rem 0;
-  align-items: center;
-  justify-content: center;
+  padding: 1.7rem 0;
   position: absolute;
   width: 100%;
   font-weight: 500;
 }
 
 footer a {
+  width: 100vw;
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  object-fit: contain;
+  min-height: 50px;
+  img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-left: 0.3rem;
+  }
 }
 
-.vlogo {
-  height: 1em;
-  margin-left: 0.6rem;
+.title {
+  font-family: Bodoni Moda, Times New Roman, serif;
+  font-weight: 200;
+  font-size: 75px;
 }
 
-.logo {
-  margin-top: -0.8rem;
-  height: 1em;
-  margin-left: 0.6rem;
+.special {
+  color: #00abb3;
+  font-style:oblique;
+}
+
+@media only screen and (max-width: 713px){
+  .special {
+    margin-left: 40%;
+  }
+  footer {
+    display: block;
+    a {
+      margin: 0.5rem 0rem;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,10 +81,7 @@ footer a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
-  }
-  .vlogo img {
-    filter: invert(1);
+    color: #eaeaea;
+    background: #3c4048;
   }
 }

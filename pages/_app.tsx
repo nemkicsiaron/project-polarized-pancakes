@@ -18,9 +18,7 @@ function MyApp({ Component, pageProps }) {
                 rel="noopener noreferrer"
                 >
                 Project Pollarized{' '}
-                <span className="logo">
                     <Image src="/static/pollarized.png" alt="Pollarized Logo" width={50} height={50} />
-                </span>
                 </Link>
                 <Link
                 href="https://github.com/nemkicsiaron"
@@ -28,9 +26,7 @@ function MyApp({ Component, pageProps }) {
                 rel="noopener noreferrer"
                 >
                 Made by{' '}
-                <span className="logo">
                     <Image src="/static/Kamarad Kommie Doggo.png" alt="My Logo" width={50} height={50} />
-                </span>
                 </Link>
                 <Link
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -38,8 +34,8 @@ function MyApp({ Component, pageProps }) {
                 rel="noopener noreferrer"
                 >
                 Powered by{' '}
-                <span className="vlogo">
-                    <Image src="/static/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                <span id="vlogo">
+                    <Image src="/static/vercel.png" alt="Vercel Logo" width={72} height={16} />
                 </span>
                 </Link>
              </footer>
