@@ -1,0 +1,36 @@
+.footer {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex: 1;
+    border-top: 3px solid #eaeaea;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: #222;
+    }
+    @media only screen and (max-width: 713px) {
+      display: block;
+      a {
+          margin: 0.5rem 0rem;
+      }
+    }
+}
+
+.footer a {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  min-height: 50px;
+
+  img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-left: 0.3rem;
+  }
+}
