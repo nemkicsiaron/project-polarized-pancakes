@@ -141,3 +141,6 @@ original.js
 
 # hidden shit
 .*
+
+#unnecessarry dev resources
+resources
